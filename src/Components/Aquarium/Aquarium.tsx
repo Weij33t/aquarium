@@ -95,8 +95,7 @@ export const Aquarium = () => {
       </Row>
       <Input
         type={'text'}
-        placeholder={'Введите высоты столбцов через запятую'}
-        defaultValue={userConfig}
+        placeholder={'Введите высоты столбцов через запятую без пробела'}
         className={`${isWrongInput ? 'wrong' : ''}`}
         onChange={({ target }) => (userConfig = target.value)}
       />
