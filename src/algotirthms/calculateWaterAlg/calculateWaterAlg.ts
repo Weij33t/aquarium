@@ -29,51 +29,6 @@ export function calculateWaterAlg(data: number[]): {
       left++
     }
   }
-  // matrix[left] = Math.max(0, leftMax - data[left])
-
-  // const max = Math.max(...data)
-  // const matrix: number[][] = []
-  // let totalSum = 0
-  // let totalOp = 0
-  // for (let i = 0; i < max; i++) {
-  //   matrix[i] = []
-  //   for (let j = 0; j < data.length; j++) {
-  //     if (data[j] === 0) {
-  //       matrix[i][j] = 0
-  //       continue
-  //     }
-  //     if (data[j] - 1 >= i) {
-  //       matrix[i][j] = 1
-  //     } else {
-  //       matrix[i][j] = 0
-  //     }
-  //     totalOp++
-  //   }
-  //   let beforeWasOne = false
-  //   let lastOneIndex = 0
-  //   let sum = 0
-  //   for (let j = 0; j < data.length; j++) {
-  //     const isZero = matrix[i][j] === 0
-  //     const isOne = matrix[i][j] === 1
-  //     if (isOne) {
-  //       beforeWasOne = true
-  //       lastOneIndex = j
-  //     }
-  //     if (beforeWasOne && isZero && j < data.length - 1) {
-  //       sum += 1
-  //       matrix[i][j] = 2
-  //     } else if (isZero && j === data.length - 1) {
-  //       sum -= j - lastOneIndex - 1
-  //       for (let k = lastOneIndex + 1; k < j; k++) {
-  //         matrix[i][k] = 0
-  //         totalOp++
-  //       }
-  //     }
-  //   }
-  //   totalOp++
-  //   totalSum += sum
-  // }
-  // matrix.reverse()
 
   return { matrix, totalSum: volume }
 }
